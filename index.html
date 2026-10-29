@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="head">
+          <h2>Login to <span class="h">Chatly</span></h2>
+        </div>
+        <div class="main">
+          <form>
+            <div class="emai">
+              <input type="email" placeholder="email/username" id="email" name="email"/>
+              <small id="emailError" class="error"></small>
+            </div>
+            <div class="password">
+              <div class="pass">
+                <input type="password" placeholder="password" id="password" name="password" />
+                <span class="show">Show</span>
+              </div>
+              <small id="passError" class="error"></small>
+            </div>
+            <div class="btn">
+              <button type="submit">Login</button>
+              <small id="loginError" class="error"></small>
+            </div>
+          </form>
+
+          <p>Want to create a new account? <a href="signUp.html">sign up</a></p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

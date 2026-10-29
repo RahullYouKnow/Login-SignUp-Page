@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+
+  width: min(100%, 400px);
+}
+#head{
+    color: white;
+    
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 50px;
+}
+.head {
+  text-align: center;
+  background-color: #08ade4;
+  padding: 50px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inp {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  padding-right: 60px;
+  border: 1px solid #08ade4;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+#pass {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+}
+#show {
+  position: absolute;
+  right: 14px;
+  font-size: 12px;
+  color: #08ade4;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#show:hover{
+ cursor: pointer;
+  color: #2599bf;
+}
+#show:active {
+  transform: scale(1.05);
+}
+button {
+  border-radius: 5px;
+  padding: 8px 50px;
+  border: none;
+  color: white;
+  background-color: #08ade4;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+button:hover{
+     background-color: #36add5;
+  cursor: pointer;
+}
+button:active {
+  transform: scale(1.04);
+}
+a {
+ color: black;
+  transition: 0.3s;
+  
+  text-decoration: none;
+  font-size: 13px;
+}
+#a{
+     color: #08ade4;
+     font-weight: bold;
+     transition: 0.3s;
+}
+#a:hover {
+  cursor: pointer;
+  color: #1d91b7;
+}
+#a:active {
+  transform: scale(1.05);
+}
+
+@media(max-width:600px){
+    .main {
+    padding: 30px;
+  }
+  .head {
+    padding: 30px;
+  }
+  .head h2 {
+    font-size: 1.5rem;
+  }
+  input {
+    padding-right: 30px;
+  }
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.valid {
+  border: solid green;
+}
+.invalid {
+  border: solid red;
+}
+.error {
+  font-size: 10px;
+  color: red;
+}
+.succuse{
+  color: green;
+}
